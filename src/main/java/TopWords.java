@@ -11,8 +11,8 @@ public class TopWords {
         Matcher matcher = pattern.matcher(text);
         // first extract all words and then put them into a map
         while (matcher.find()) {
-            String s = matcher.group().toLowerCase();
-            wordsCount.put(s, wordsCount.getOrDefault(s, 1)+1 );
+            String textFinded = matcher.group().toLowerCase();
+            wordsCount.put(s, wordsCount.getOrDefault(textFinded, 1)+1 );
         }
         List<Map.Entry<String, Integer>> topWords = new ArrayList<>(wordsCount.entrySet());
         //sort the map
