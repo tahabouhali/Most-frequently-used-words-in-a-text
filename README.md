@@ -1,9 +1,7 @@
 
-/**
+
  * Most frequently used words in a text
- * <p>
  * https://www.codewars.com/kata/51e056fe544cf36c410000fb/
- * <p>
  * Details:
  * <p>
  * Write a function that, given a string of text (possibly with punctuation and line-breaks),
@@ -16,4 +14,4 @@
  * Ties may be broken arbitrarily.
  * If a text contains fewer than three unique words, then either the top-2 or top-1 words
  * should be returned, or an empty array if a text contains no words.
- */
+ 
