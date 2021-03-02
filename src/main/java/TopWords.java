@@ -15,7 +15,7 @@ public class TopWords {
             wordsCount.put(s, wordsCount.getOrDefault(textFinded, 1)+1 );
         }
         List<Map.Entry<String, Integer>> topWords = new ArrayList<>(wordsCount.entrySet());
-        //sort the map
+        //sort the list
         topWords.sort(Map.Entry.comparingByValue());
         ArrayList<String> result = new ArrayList<>();
         int j = 0;
